@@ -67,20 +67,6 @@ const s = StyleSheet.create({
 
 /* eslint react/prop-types: 0 */ // https://github.com/yannickcr/eslint-plugin-react/issues/106
 export default class LiteCreditCardInput extends Component {
-  static propTypes = {
-    ...InjectedProps,
-
-    placeholders: PropTypes.object,
-
-    inputStyle: PropTypes.any,
-
-    validColor: PropTypes.string,
-    invalidColor: PropTypes.string,
-    placeholderColor: PropTypes.string,
-
-    additionalInputsProps: PropTypes.objectOf(PropTypes.shape(TextInput.propTypes)),
-  };
-
   static defaultProps = {
     placeholders: {
       number: "1234 5678 1234 5678",
