@@ -8,8 +8,8 @@ import ReactNative, {
   ScrollView,
   Dimensions,
   TextInput,
-  ViewPropTypes,
 } from "react-native";
+import ViewPropTypes from 'deprecated-react-native-prop-types'
 
 import CreditCard from "./CardView";
 import CCInput from "./CCInput";
@@ -48,8 +48,8 @@ export default class CreditCardInput extends Component {
     labels: PropTypes.object,
     placeholders: PropTypes.object,
 
-    labelStyle: Text.propTypes.style,
-    inputStyle: Text.propTypes.style,
+    // labelStyle: Text.propTypes.style,
+    // inputStyle: Text.propTypes.style,
     inputContainerStyle: ViewPropTypes.style,
 
     validColor: PropTypes.string,
